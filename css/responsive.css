@@ -1,15 +1,41 @@
-/*Visto che per essere meno rigido basta mettere width: 100% anche nell'intervallo tra 768 e 1140
+/*responsive 1140px - 768px
+Visto che per essere meno rigido basta mettere width: 100% anche nell'intervallo tra 768 e 1140
  tengo una sola responsive*/
- 
+
 @media screen and (max-width: 1140px) {
     .container{
         width: 100%;
     }
 }
 
-/*responsive tablet*/
+/*responsive tablet 768px*/
 /*@media screen and (max-width: 768px){
     .container{
         width: 100%;
     }
 }*/
+
+/*responsive mobile 375px*/
+@media screen and (max-width: 375px){
+    .row{
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .row .col{
+        width: 100%;
+    }
+
+    .why-us{
+        background-color: #222;
+        margin: 0;
+        padding: 3rem 0;
+    }
+    .steps{        
+        margin: 0;
+    }
+
+    .lessons{
+        padding-bottom: 3rem;
+    }
+}
