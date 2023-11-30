@@ -1,0 +1,15 @@
+/*Visto che per essere meno rigido basta mettere width: 100% anche nell'intervallo tra 768 e 1140
+ tengo una sola responsive*/
+ 
+@media screen and (max-width: 1140px) {
+    .container{
+        width: 100%;
+    }
+}
+
+/*responsive tablet*/
+/*@media screen and (max-width: 768px){
+    .container{
+        width: 100%;
+    }
+}*/
