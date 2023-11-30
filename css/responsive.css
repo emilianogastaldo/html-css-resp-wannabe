@@ -15,8 +15,8 @@ Visto che per essere meno rigido basta mettere width: 100% anche nell'intervallo
     }
 }*/
 
-/*responsive mobile 375px*/
-@media screen and (max-width: 375px){
+/*responsive mobile 576px*/
+@media screen and (max-width: 576px){
     .row{
         flex-wrap: wrap;
         gap: 50px;
