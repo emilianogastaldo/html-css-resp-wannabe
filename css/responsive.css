@@ -1,12 +1,24 @@
 /*responsive 1140px - 768px
 Visto che per essere meno rigido basta mettere width: 100% anche nell'intervallo tra 768 e 1140
  tengo una sola responsive*/
-
+ 
 @media screen and (max-width: 1140px) {
     .container{
         width: 100%;
     }
 }
+
+/*Questa media query è un overkill. Bastava riscrivere il conteiner e siccome questo file
+è importato sotto all'altro file css, tutti i comandi che scrivo qui vinceranno
+
+.container{
+    width:100%
+    max-width: 1140px
+}
+
+Così facendo riscrivo  il conteiner e gli do il suo significato originale, ovvero che ha una
+massima larghezza e non una larghezza fissa.
+*/
 
 /*responsive tablet 768px*/
 /*@media screen and (max-width: 768px){
@@ -19,7 +31,7 @@ Visto che per essere meno rigido basta mettere width: 100% anche nell'intervallo
 @media screen and (max-width: 576px){
     .row{
         flex-wrap: wrap;
-        gap: 50px;
+        gap: 50px; /*conveniva usare row-gap, così da essere più specifico*/
     }
 
     .row .col{
